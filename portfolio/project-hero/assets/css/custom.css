@@ -1,0 +1,9 @@
+/* Add custom style here  */
+
+
+
+header.theme-dark { background-color: var(--blue-700) }
+
+#hero-3, #hero-4, #hero-5, #hero-6, #hero-7, #hero-8 { margin-top: 80px }
+
+#hero1 header.theme.dark {background-color: var(--blue-700) }

@@ -1,98 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Rafael Tavares | IT Student - Dorset College Ireland</title>
-
-    <meta name="description" content="Hello, I'm Rafael. A IT Student at Dorset College based in Dublin-Ireland">   
-
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">    
-
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img//favicon-32x32.png">    
-
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img//favicon-16x16.png">    
-
+    <title>Rafael Tavares | Web Design</title>
+    <meta name="description" content="I create digital experiences to promote products, services and events.">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="manifest" href="assets/img/site.webmanifest">
 
-    <link rel="stylesheet" href="assets/css/global.css">
+	<!-- Preload large image -->
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-1NN85XGSHW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<!-- Stylesheets -->
+    <link rel="stylesheet" href="https://lunevedy.com/assets/css/lunevedy.min.css" />
+    <link rel="stylesheet" href="assets/css/custom.css" />
 
-  gtag('config', 'G-1NN85XGSHW');
-</script>
+	<!-- Google Fonts -->
 
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <!-- Font Awesome 6 icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Line Awesome thin icons. Delete if not using. -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 
 </head>
 
+
 <body>
 
-     <!-- hero block -->
-     <header class="hero-block text-center">
+    <!-- menu and 'hero block' header -->
+    
+    <nav class="theme-dark menu-sticky">
+        <div class="container-menu menu-desktop">
+            <a href="#" class="brand">
+                <img src="assets/img/logo2.png" alt="Logo ">
+            </a>
 
-        <h1 class="slide-in-top">Hello, I'm Rafael Tavares</h1>
+            <div class="container-menu-links">
 
-        <h2 class="slide-in-left">IT student</h2>
+                <div class="nav-toggle">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+                </div>
 
-        <div class="hero-bg-media">
-        <img src="assets/img/frontpage.jpg" alt="Frontpage" class="narrow">
-    </div>
-    <div class="bg-overlay"></div>
+                <ul class="links-wrapper">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="portfolio/index.html">Portfolio</a></li>
+                    <li><a class="btn btn-solid" id="btn-cta" href="contact/index.html"><span>Contact</span> <i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
 
-    <p>I created this website to show some of my recent web design work.</p>  
+        </div>
+    </nav>
+
+    <header class="theme-dark hero-bg desktop-min-height-90vh header-after-menu-sticky">
+
+        <div class="container-text reveal-slide-from-left-header">
+
+            <h1 class="slide-in-top">Rafael Tavares</h1>
+
+        <h2 class="slide-in-left">I am an innovative front-end developer who loves to build human-friendly interfaces.</h2>
+
+        </div>
+
+        
+
+        <div class="container-media">
+			<img src="assets/img/hero-image.jpg" alt="Rafael Tavares, webdesigner"></div>
+
+        <div class="container-overlay"></div>
+
+    	
+
+
+
+	<div class="container-btn">
+			<a href="#" class="btn btn-solid"><span>View Portfolio</span><i class="fa-regular fa-folder open"></i></a>
+            <a href="#" class="btn btn-outline"><span>Contact</span><i class="fa-regular fa-envelope"></i></a>
+		</div>
+        
+
 </header>
 
-    <h3>Web Pages | Front-web Class</h3>    
+
+
+    <!-- main content with sections -->
+    <main>
+
+        <!-- replace these empty sections with your own or delete them. -->
+        
+
+	<!-- section starts here -->
+
+	<section class="theme-light section-selector-1">
+
+		<div class="col-1 text-center">
+			<h2>Recent projects</h2>
+			<h3>Below you can see some examples of my recent work. Check out my complete <a href="portfolio/index.html">portfolio.</a>. Have a project you would like to discuss? <a href="contact/index.html">Let's make something great together!</a></h3>
+		</div>
+
+		<!-- Begin three-column flexbox grid -->
+		<div class="flex-cols-3">
+
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness">
+					<a href="portfolio/Smoothies/index.html"><img src="assets/img/project-smoothie.jpg" alt="Smoothies Project"></a>
+				</figure><h3>Smooth Smoothies                </h3>
+				<p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.                </p>
+				<a href="portfolio/Smoothies/index.html" class="btn btn-outline btn-pill"><span>View Project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness">
+					<a href="portfolio/fashion/index.html"><img src="assets/img/project-fashion.jpg" alt="Fashion Project"></a>
+				</figure><h3>Snazzy Fashion</h3>
+				<p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
+				<a href="portfolio/fashion/index.html" class="btn btn-outline btn-pill"><span>View Project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+			<div class="col-3">
+				<figure class="photos-zoom photos-brightness">
+					<a href="portfolio/van-gogh/index.html"><img src="assets/img/project-van-gogh.png" alt="Van Gogh Project"></a>
+				</figure><h3>Vincent van Gogh</h3>
+				<p>A summary of the life and work of artist Vincent van Gogh with an embedded and responsive video from YouTube.</p>
+				<a href="portfolio/van-gogh/index.html" class="btn btn-outline btn-pill"><span>View Project</span><i class="fas fa-arrow-right"></i></a>
+			</div>
+
+		</div>
+		<!-- End three-column flexbox grid -->
+
+	</section>
+
+	<!-- section ends here -->
+
+
     
-    <p><a href="exercises/page-1.html">Page 1 - A Tale of Two Cities</a></p>
-    <p><a href="exercises/page-2.html">Page 2 - IBAT Chocolates</a></p>
-    <p><a href="exercises/page-3.html">Page 3 - Prince & Purple Rain</a></p>
-    <p><a href="exercises/page-4.html">Page 4 - Lorem Ipsum Text</a></p>
-    <p><a href="exercises/page-5.html">Page 5 - Vincent van Gogh</a></p> 
-    <p><a href="exercises/page-6.html">Page 6 - Irish Tourism</a></p> 
-    <p><a href="exercises/page-7.html">Page 7 - Smoothies</a></p> 
-    <p><a href="exercises/page-8.html">Page 8 - Software Analytics</a></p> 
-    <p><a href="exercises/page-9.html">Page 9 - The Box Model</a></p> 
-    <p><a href="exercises/page-10.html">Page 10 - Web Page With Panels</a></p> 
-    <p><a href="exercises/page-11.html">Page 11 - Responsive grid of rows and columns</a></p> 
-    <p><a href="exercises/hero-text.html">Hero Block with animated text</a></p> 
-    <p><a href="exercises/hero-image.html">Hero Block with background image</a></p> 
-    <p><a href="exercises/hero-video.html">Hero Block with background video</a></p> 
 
+    </main>
 
+    <!-- footer -->
+    
+	<footer class="theme-dark text-center-desktop text-center-mobile">
 
+		<h2>Rafael Tavares, web designer and front-end developer</h2>
 
+		<h3>Excellence in digital creation</h3>
 
+		<ul class="footer-links">
+			<li><a href="#">Home</a></li>
+			<li><a href="portfolio/index.html">Portfolio</a></li>
+			<li><a href="contact/index.html">Contact</a></li>
+		</ul>
 
+		<ul class="footer-icons">
+			<li><a href="http://rafactavares.github.io" target="_blank"><i class="fab fa-github-square"></i></a></li>
+			<li><a href="https://www.instagram.com/rafa.tavaresz/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+		</ul>
 
+		<p class="privacy"><a href="privacy.html">Privacy &amp; Legal</a></p>
 
+	</footer>
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-    <script>
-    window.cookieconsent.initialise({
-      "palette": {
-        "popup": {
-          "background": "#000"
-        },
-        "button": {
-          "background": "#f1d600"
-        }
-      },
-      "content": {
-        "href": "privacy.html"
-      }
-    });
-    </script>
+    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
 
 </body>
 </html>
