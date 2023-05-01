@@ -1,6 +1,5 @@
 export function calculate(firstOperand, secondOperand, operator) {
 
-
 function calculate(firstOperand, secondOperand, operator) {
     if (operator === '+') {
       return firstOperand + secondOperand;
@@ -11,5 +10,8 @@ function calculate(firstOperand, secondOperand, operator) {
     } else if (operator === '/') {
       return firstOperand / secondOperand;
     }
-}
+  
+    return secondOperand;
+  }
+
 }
